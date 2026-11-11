@@ -4,32 +4,32 @@ vim.o.background = "dark"
 vim.g.colors_name = "osaka-jade"
 
 local palette = {
-  fg = "#C1C497",
-  bg = "#111C18",
-  sel_fg = "#111C18",
-  sel_bg = "#C1C497",
-  cursor = "#D7C995",
-  cursor_txt = "#000000",
-  black = "#23372B",
-  black_bright = "#53685B",
-  red = "#FF5345",
-  red_bright = "#DB9F9C",
-  green = "#549E6A",
-  green_bright = "#63B07A",
-  yellow = "#459451",
-  yellow_bright = "#E5C736",
-  blue = "#509475",
-  blue_bright = "#ACD4CF",
-  magenta = "#D2689C",
-  magenta_bright = "#75BBB3",
-  cyan = "#2DD5B7",
-  cyan_bright = "#8CD3CB",
-  white = "#F6F5DD",
-  white_bright = "#9EEBB3",
+	fg = "#C1C497",
+	bg = "#111C18",
+	sel_fg = "#111C18",
+	sel_bg = "#C1C497",
+	cursor = "#D7C995",
+	cursor_txt = "#000000",
+	black = "#23372B",
+	black_bright = "#53685B",
+	red = "#FF5345",
+	red_bright = "#DB9F9C",
+	green = "#549E6A",
+	green_bright = "#63B07A",
+	yellow = "#459451",
+	yellow_bright = "#E5C736",
+	blue = "#509475",
+	blue_bright = "#ACD4CF",
+	magenta = "#D2689C",
+	magenta_bright = "#75BBB3",
+	cyan = "#2DD5B7",
+	cyan_bright = "#8CD3CB",
+	white = "#F6F5DD",
+	white_bright = "#9EEBB3",
 }
 
 local function hi(group, opts)
-  vim.api.nvim_set_hl(0, group, opts)
+	vim.api.nvim_set_hl(0, group, opts)
 end
 
 hi("Normal", { fg = palette.fg, bg = palette.bg })
@@ -89,7 +89,7 @@ hi("DiffDelete", { fg = palette.red, bg = palette.black })
 hi("DiffText", { fg = palette.sel_fg, bg = palette.blue_bright })
 
 hi("DiagnosticError", { fg = palette.red })
-hi("DiagnosticWarn", { fg = palette.yellow_bright })
+hi("DiagnosticWarn", { fg = palette.red })
 hi("DiagnosticInfo", { fg = palette.blue_bright })
 hi("DiagnosticHint", { fg = palette.cyan_bright })
 hi("DiagnosticOk", { fg = palette.green_bright })
